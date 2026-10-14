@@ -25,6 +25,8 @@ ShopEase is split into three independent tiers:
 
 ## 🏗️ Architecture
 
+   ![ShopEase Architecture](docs/shopease_architecture.png)
+   
 \`\`\`
                      GitHub Repository
                             │
