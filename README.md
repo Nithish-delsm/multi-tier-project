@@ -170,6 +170,23 @@ kubectl apply -f k8s/frontend-deployment.yaml
 
 This project's live AWS infrastructure is provisioned on-demand and torn down after testing to avoid ongoing costs — a deliberate practice for learning projects. The Terraform configuration can fully reproduce the deployment at any time.
 
+## 📸 Screenshots
+
+### 🏠 ShopEase Homepage
+Live products loaded from the backend API, running on Amazon EKS.
+
+![Homepage with products](screenshots/homepage-products.png)
+
+### ☁️ Kubernetes Deployment Status
+All pods, services, and deployments running on the EKS cluster — frontend and backend each with 2 replicas, both exposed via AWS Load Balancers.
+
+![EKS kubectl status](screenshots/eks-kubectl-status.png)
+
+### ⚙️ CI/CD Pipeline — GitHub Actions
+Automated pipeline that builds both Docker images and pushes them to Amazon ECR on every push to `main`.
+
+![CI/CD pipeline success](screenshots/cicd-pipeline-success.png)
+
 ## 👨‍💻 Author
 
 Built as a hands-on learning project to understand multi-tier architecture, containerization, and AWS cloud infrastructure.
